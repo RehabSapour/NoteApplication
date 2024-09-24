@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RoomDatabase2" parent="Theme.Material3.DayNight">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">#905113</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+<!--    <style name="MyActionBar" parent="@android:style/Widget.ActionBar">-->
+<!--        <item name="android:background">#804000</item>-->
+<!--    </style>-->
+
+    <style name="Theme.RoomDatabase2" parent="Base.Theme.RoomDatabase2" />
+
+</resources>
