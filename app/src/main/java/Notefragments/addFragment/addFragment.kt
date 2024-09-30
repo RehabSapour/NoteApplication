@@ -1,6 +1,7 @@
 package Notefragments.addFragment
 
 import Data.Note
+import Notefragments.addFragment.listfragment.ListFragment
 import android.icu.text.CaseMap.Title
 import android.os.Bundle
 import android.text.TextUtils
@@ -12,6 +13,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.roomdatabase2.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.google.android.material.textfield.TextInputEditText
@@ -38,6 +40,7 @@ class addFragment : BottomSheetDialogFragment() {
         dicription =view.findViewById(R.id.discriptionEdittext)
         add_button.setOnClickListener{
             addNoteToDataBase()
+            dismiss() // Dismiss the BottomSheetDialogFragment
         }
 
         return view
